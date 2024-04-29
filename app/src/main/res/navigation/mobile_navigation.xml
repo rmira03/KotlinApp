@@ -28,4 +28,10 @@
         android:name="com.example.kotlinapp.ui.funciones.FuncionesFragment"
         android:label="@string/menu_funciones"
         tools:layout="@layout/fragment_funciones" />
+
+    <fragment
+        android:id="@+id/nav_pagekotlin"
+        android:name="com.example.kotlinapp.ui.slideshow.PagekotlinFragment"
+        android:label="@string/menu_pagekotlin"
+        tools:layout="@layout/fragment_pagekotlin" />
 </navigation>

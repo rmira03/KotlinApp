@@ -4,21 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    android:visibility="visible"
+    tools:context=".ui.home.HomeFragment"
+    tools:visibility="visible">
 
     <TextView
         android:id="@+id/text_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_home"
+        android:layout_width="303dp"
+        android:layout_height="48dp"
+        android:justificationMode="inter_word"
+        android:text="¡Bienvenido! Con esta App aprenderás Kotlin de manera dinamica y rapida."
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home"
+        app:layout_constraintVertical_bias="0.647" />
 
 
     <ImageView
@@ -32,45 +46,33 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.476" />
 
-    <TextView
-        android:id="@+id/textView_home"
-        android:layout_width="303dp"
-        android:layout_height="48dp"
-        android:text="@string/bienvenidos_kotlin"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageView
+        android:id="@+id/imageCopyright"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        android:src="@drawable/ic_copyright"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/copyright"
+        app:layout_constraintEnd_toStartOf="@+id/copyright"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.647" />
+        app:layout_constraintTop_toTopOf="@+id/copyright"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <!-- Icono de lupa -->
-
-    <EditText
-        android:id="@+id/editTextWebAddress"
-        android:layout_width="268dp"
-        android:layout_height="30dp"
-        android:background="@drawable/edittext_border"
-        android:hint="Buscar..."
-        android:inputType="textUri"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="212dp"
+        android:layout_height="32dp"
+        android:text="Copyright all rights reserved"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.628" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-    <ImageView
-        android:id="@+id/searchIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="4dp"
-        android:src="@drawable/ic_search"
-        app:layout_constraintBottom_toBottomOf="@id/editTextWebAddress"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

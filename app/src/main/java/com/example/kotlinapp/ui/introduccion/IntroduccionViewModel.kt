@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModel
 class IntroduccionViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is introduccion Fragment"
+        value = "¿Que es Kotlin?"
     }
     val text: LiveData<String> = _text
 }

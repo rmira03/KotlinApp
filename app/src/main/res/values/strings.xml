@@ -11,7 +11,7 @@
     <string name="menu_introduccion">Introducción</string>
     <string name="menu_slideshow">Variables</string>
     <string name="menu_funciones">Funciones</string>
-    <string name="bienvenidos_kotlin">¡Bienvenido! Con esta App aprenderás Kotlin de manera dinamica y rapida</string>
+    <string name="menu_pagekotlin">Pagina Kotlin</string>
     <string name="buscar">Buscar...</string>
 
 

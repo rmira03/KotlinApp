@@ -1,15 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.funciones.FuncionesFragment">
 
     <TextView
+        android:id="@+id/textFun1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello"
-        android:textAlignment="center" />
+        android:layout_margin="12dp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="27dp" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/textViewFun1"
+        android:layout_width="367dp"
+        android:layout_height="108dp"
+        android:layout_margin="7dp"
+        android:layout_marginTop="12dp"
+        android:justificationMode="inter_word"
+        android:text="Una función es un bloque de código que sólo se ejecuta cuando se llama.\nPuedes pasar los datos, conocidos como parámetros, en una función.\nLas funciones se utilizan para realizar ciertas acciones, y también se conocen como métodos."
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFun2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFun1" />
+
+    <TextView
+        android:id="@+id/textViewFun3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:layout_margin="7dp"
+        android:justificationMode="inter_word"
+        android:text="Para crear su propia función, use el funpalabra clave, y escribir el nombre de la función, seguida de parantestesis ():"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewFun1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFun2" />
+
+    <TextView
+        android:id="@+id/textViewFun5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:justificationMode="inter_word"
+        android:text="Para llamar a una función en Kotlin, escriba el nombre de la función seguida de dos parantesis ()."
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewFun2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFun4" />
+
+    <ImageView
+        android:id="@+id/imageViewFun2"
+        android:layout_width="370dp"
+        android:layout_height="108dp"
+        android:layout_margin="7dp"
+        android:src="@drawable/call_fun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFun5" />
+
+    <TextView
+        android:id="@+id/textViewFun4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:text="Llama a una función"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFun5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFun1" />
+
+    <ImageView
+        android:id="@+id/imageViewFun1"
+        android:layout_width="370dp"
+        android:layout_height="127dp"
+        android:layout_margin="7dp"
+        android:padding="5dp"
+        android:src="@drawable/code_fun"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFun4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFun3" />
+
+    <TextView
+        android:id="@+id/textViewFun2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:justificationMode="inter_word"
+        android:text="Crea tus propia funcones"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFun3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFun1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

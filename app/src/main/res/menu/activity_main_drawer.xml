@@ -20,5 +20,9 @@
             android:id="@+id/nav_funciones"
             android:icon="@drawable/ice_menu_arrow_right"
             android:title="@string/menu_funciones" />
+        <item
+            android:id="@+id/nav_pagekotlin"
+            android:icon="@drawable/ice_menu_arrow_right"
+            android:title="@string/menu_pagekotlin" />
     </group>
 </menu>

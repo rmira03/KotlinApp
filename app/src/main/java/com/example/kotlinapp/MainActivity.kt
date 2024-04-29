@@ -13,6 +13,8 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kotlinapp.databinding.ActivityMainBinding
+import android.net.Uri
+import android.widget.VideoView
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,11 +36,14 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_introducción, R.id.nav_slideshow, R.id.nav_funciones
+                R.id.nav_home, R.id.nav_introducción, R.id.nav_slideshow, R.id.nav_funciones, R.id.nav_pagekotlin
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+
+
     }
 
 
@@ -51,5 +56,7 @@ class MainActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+
+
     }
 }
